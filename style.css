@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    transition:all 0.225s;
+    overflow:hidden;
+}
+
+
+body
+{
+    background-color: rgb(195, 253, 195);
+}
+.heading{
+    text-align: center;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+#boardspace
+{
+    width:43vw;
+    height:43vw;
+    background:linear-gradient(360deg,rgb(157, 243, 157),rgb(3, 160, 3));
+    margin:auto;
+    border:2px solid black;
+    display:grid;
+    grid-template-rows: repeat(24,1fr);
+    grid-template-columns: repeat(24,1fr);
+    margin-top: 80px;
+    overflow: none;
+    position: relative;
+    bottom:60px;
+    overflow:hidden;
+}
+
+.head{
+    background-color:rgb(88, 255, 88);
+    border-radius: 8px;
+}
+
+.boardspace .food{
+    background-color:coral;
+    border-radius: 50%;
+}
+
+.headmain{
+    background:#00570c;
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.song{
+    position: absolute;
+    height:480px;
+    width:400px;
+    background-color: lightgreen;
+    border-radius: 10px;
+    top:200px;
+
+}
+.song p{
+    padding-bottom:20px;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding-left:10px;
+}
+
+.score{
+    display:block;
+    text-align: center;
+    position: relative;
+    top:20px;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+}
+
+.copy
+{
+    text-align: center;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    position: relative;
+    bottom:60px;
+}
